@@ -43,6 +43,7 @@
   width: 100vw;
 }
 
+/* メインメッセージ */
 .main-message{
   width: 100%;
   margin: 74px 0 114px 0;
@@ -54,4 +55,15 @@
   margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
+}
+
+/* タイトル */
+.title{
+  font-size: 26px;
+  font-family: "Times New Roman";
+  width: 720px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9 ;
 }

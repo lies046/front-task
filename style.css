@@ -1,0 +1,57 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+  
+.container{
+  height: 100vh;
+  width: 100%;
+}
+
+/* ヘッダーロゴ */
+.header{
+  width: 100%;
+  margin: 30px 0;
+}
+
+.header-logo{
+  width: 100%;
+  text-align: center;
+}
+
+/* ナビゲーションバー */
+.nav-bar{
+  padding: 22px 0;
+}
+
+.nav-bar a{
+  font-family: "Times New Roman";
+  margin-right: 80px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+}
+
+.nav-bar__list{
+  width: 100%;
+  text-align: center;
+  padding: 0 50px;
+}
+
+/* メインヴィジュアル */
+.mainv{
+  width: 100vw;
+}
+
+.main-message{
+  width: 100%;
+  margin: 74px 0 114px 0;
+}
+
+.main-message__sentense{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  width: 720px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 30px;
+}

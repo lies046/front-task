@@ -109,6 +109,8 @@
   grid-template-columns: repeat(4, 200px);
 }
 
+/* ボタン */
+
 .btn{
   width: 260px;
   border: 1px solid #d9d9d9;
@@ -128,6 +130,41 @@
   color: #000;
 }
 
+.btn2{
+  width: 188px;
+  border: 1px solid #d9d9d9;
+  padding: 12px 0;
+  margin: 0 auto 100px;
+}
+
+.btn2 p{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn2 a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* アバウトアス */
 .aboutus{
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.aboutus__title{
+  font-family: "Times New Roman";
+  font-size: 26px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.aboutus__message{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  width: 720px;
+  margin: 0 auto 20px;
 }

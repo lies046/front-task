@@ -88,9 +88,9 @@ header{
 }
 
 .nav-bar__list{
-  width: 80%;
+  width: 100%;
   text-align: center;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 
 /* メインヴィジュアル */
@@ -227,6 +227,7 @@ footer{
 
 .footer-icon{
   margin: 40px 0 48px;
+  padding-left: 50px;
 }
 
 .footer-icon__list{
@@ -234,9 +235,14 @@ footer{
   margin-right: 40px;
 }
 
-.top-nav{
+#top-nav{
   text-align: right;
   margin-right: 50px;
+  cursor: pointer;
+}
+
+.company{
+  padding-left: 50px;
 }
 
 .company__content{

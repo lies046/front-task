@@ -1,3 +1,4 @@
+/* 隙間消し */
 * {
   margin: 0px;
   padding: 0px;
@@ -6,10 +7,53 @@
 .container{
   height: 100vh;
   width: 100%;
+  background-color: #ffffff;
+}
+
+/* ボタン */
+
+.btn{
+  width: 260px;
+  border: 1px solid #d9d9d9;
+  padding: 16px 0;
+  margin: 0 auto 100px;
+  background-color: #ffffff;
+}
+
+.btn p{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn a{
+  text-decoration: none;
+  color: #000;
+}
+
+.btn2{
+  width: 188px;
+  border: 1px solid #d9d9d9;
+  padding: 12px 0;
+  margin: 0 auto 100px;
+  background-color: #ffffff;
+}
+
+.btn2 p{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn2 a{
+  text-decoration: none;
+  color: #000;
 }
 
 /* ヘッダーロゴ */
-.header{
+header{
   width: 100%;
   margin: 30px 0;
 }
@@ -121,46 +165,6 @@
   grid-template-columns: repeat(4, 200px);
 }
 
-/* ボタン */
-
-.btn{
-  width: 260px;
-  border: 1px solid #d9d9d9;
-  padding: 16px 0;
-  margin: 0 auto 100px;
-}
-
-.btn p{
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  text-align: center;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.btn a{
-  text-decoration: none;
-  color: #000;
-}
-
-.btn2{
-  width: 188px;
-  border: 1px solid #d9d9d9;
-  padding: 12px 0;
-  margin: 0 auto 100px;
-}
-
-.btn2 p{
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  text-align: center;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.btn2 a{
-  text-decoration: none;
-  color: #000;
-}
-
 /* アバウトアス */
 .aboutus{
   text-align: center;
@@ -206,8 +210,7 @@
 }
 
 /* フッター */
-.footer{
-  /* width: 100%; */
+footer{
   border-top: 1px solid #d9d9d9;
 }
 
@@ -230,6 +233,12 @@
   display: inline-block;
   font-size: 12px;
   margin-right: 40px;
+  
+}
+
+.company__content a{
+  text-decoration: none;
+  color: #000;
 }
 
 .company-guide{

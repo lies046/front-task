@@ -13,38 +13,49 @@
 /* ボタン */
 
 .btn{
+  display: block;
   width: 260px;
+  color: #000;
   border: 1px solid #d9d9d9;
   padding: 16px 0;
   margin: 0 auto 100px;
   background-color: #ffffff;
+  transition: all  0.5s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #ffffff !important;
 }
 
 .btn p{
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   text-align: center;
   font-size: 14px;
-  text-decoration: none;
-}
-
-.btn a{
-  text-decoration: none;
-  color: #000;
 }
 
 .btn2{
+  display: block;
   width: 188px;
+  color: #000;
   border: 1px solid #d9d9d9;
   padding: 12px 0;
   margin: 0 auto 100px;
   background-color: #ffffff;
+  transition: all  0.5s ease;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  background-color: #000;
+  color: #ffffff !important;
 }
 
 .btn2 p{
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   text-align: center;
   font-size: 14px;
-  text-decoration: none;
 }
 
 .btn2 a{

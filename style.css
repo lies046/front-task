@@ -168,3 +168,47 @@
   width: 720px;
   margin: 0 auto 20px;
 }
+
+.bottom-content{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.bottom-content__list{
+  display: inline-block;
+  margin: 0 35px;
+  width: 430px;
+}
+
+.bottom-content__list--title{
+  font-family: "Times New Roman";
+  margin: 20px 0;
+  font-size: 26px;
+}
+
+.bottom-content__list--message{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* フッター */
+.footer{
+  /* width: 100%; */
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer-icon{
+  margin: 40px 0 48px;
+}
+
+.footer-icon__list{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.top-nav{
+  text-align: right;
+  margin-right: 50px;
+}

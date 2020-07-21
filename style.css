@@ -33,9 +33,9 @@
 }
 
 .nav-bar__list{
-  width: 100%;
+  width: 80%;
   text-align: center;
-  padding: 0 50px;
+  padding-left: 200px;
 }
 
 /* メインヴィジュアル */
@@ -205,10 +205,27 @@
 
 .footer-icon__list{
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 40px;
 }
 
 .top-nav{
   text-align: right;
   margin-right: 50px;
+}
+
+.company__content{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 40px;
+}
+
+.company-guide{
+  margin: 24px 0 56px 0;
+}
+
+.copylight{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 12px;
+  margin-bottom: 40px;
 }

@@ -268,3 +268,47 @@ footer{
   margin-bottom: 40px;
 }
 
+/* タブレット */
+@media (max-width: 1020px) and (min-width: 768px){
+  .nav-bar__list{
+    padding-left: 60px;
+  }
+
+  .nav-bar a{
+    margin-right: 60px;
+  }
+
+  .main-colection {
+  display: grid;
+  /* grid-gap: 5px; */
+  grid-template-columns: 300px 227px;
+  margin-top: 32px;
+  margin: 0 auto;
+  }
+
+  .main-collection__item1 img{
+    padding-right: 60px;
+  }
+  .main-colection__footer--list {
+    width: 100%;
+}
+
+.main-colection__footer--list-item{
+  grid-template-columns: repeat(4, 170px);
+  margin: 0 auto;
+  width: 80%;
+  }
+
+.main-colection__footer--list-item img{
+  width: 170px !important;
+  }
+
+.aboutus img{
+  width: 100% !important;
+  }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px)　{ 
+  
+}

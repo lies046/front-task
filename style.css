@@ -9,6 +9,11 @@
   width: 100%;
   background-color: #ffffff;
 }
+@media (min-width: 1021px){
+  .swiper-container{
+    display: none;
+  }
+}
 
 /* ボタン */
 
@@ -91,6 +96,10 @@ header{
   width: 100%;
   text-align: center;
   padding-left: 100px;
+}
+
+.nav-bar li{
+  display: inline-block;
 }
 
 /* メインヴィジュアル */
@@ -268,8 +277,74 @@ footer{
   margin-bottom: 40px;
 }
 
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+ 
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+ 
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+ 
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+ 
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+ 
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+}
+
 /* タブレット */
-@media (max-width: 1020px) and (min-width: 768px){
+@media (max-width: 1020px) and (min-width: 751px){
+
+  .swiper-container{
+    display: none;
+  }
+
   .nav-bar__list{
     padding-left: 60px;
   }
@@ -294,7 +369,7 @@ footer{
 }
 
 .main-colection__footer--list-item{
-  grid-template-columns: repeat(4, 170px);
+  grid-template-columns: repeat(4, 160px);
   margin: 0 auto;
   width: 80%;
   }
@@ -309,6 +384,118 @@ footer{
 }
 
 /* スマホ */
-@media screen and (max-width: 480px)　{ 
-  
+@media screen and (max-width: 750px) {
+  header{
+    margin: 20px 0;
+  }
+
+  .mainv img{
+    width: 750px !important;
+  }
+
+  .main-message{
+    width: 100%;
+    margin: 100px 0 176px 0;
+  }
+
+  .main-message__sentense{
+    width: 658px;
+    margin: 0 auto;
+    font-size: 22px;
+  }
+
+  .title{
+    font-size: 45px;
+    width: 658px;
+    padding-bottom: 30px;
+  }
+
+  .main-colection{
+    display: none;
+  }
+
+  .main-colection__footer{
+    display: none;
+  }
+
+  .main-colection__footer{
+    display: none;
+  }
+
+  .swiper-container{
+    margin-top: 64px;
+  }
+
+  .swiper-slide{
+    margin-bottom: 30px;
+  }
+
+  .swiper-pagination{
+    margin-bottom: 40px;
+  }
+
+  .btn{
+    padding: 35px 0;
+    margin: 0 auto 176px;
+    width: 70%;
+  }
+
+  .btn2{
+    width: 70%;
+    padding: 35px 0;
+    margin: 0 auto 176px;
+  }
+
+  .aboutus img{
+    width: 658px !important;
+  }
+
+  .aboutus__title{
+    margin: 64px 0;
+  }
+
+  .bottom-content__list{
+    width: 313px;
+    margin-right: 10px;
+  }
+  .bottom-content__list img{
+    width: 313px !important;
+  }
+
+  .bottom-content__list--title{
+    margin: 32px 0;
+  }
+
+  #btn2{
+    width: 313px;
+    padding: 30px;
+    margin: 16px 0 244px 0;
+  }
+
+  .footer-icon{
+    margin: 70px 0 80px;
+  }
+
+  .footer-icon__list{
+    margin-right: 76px;
+  }
+
+  .company{
+    width:100%;
+    padding: 0;
+  }
+
+  .company__content{
+    display: block;
+    margin:  0 auto 30px;
+  }
+
+  .company-guide{
+    margin-bottom: 98px;
+  }
+
+  .copylight{
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
 }

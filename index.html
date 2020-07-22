@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="destyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
   <title>ROYAL BRANDING</title>
 </head>
 
@@ -18,16 +19,18 @@
     </header>
 
     <div class="nav-bar">
-      <div class="nav-bar__list">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">COLLECTION</a>
-        <a href="#">SHOP</a>
-        <a href="#">ONLINE SHOP</a>
-      </div>
+
+      <ul class="nav-bar__list">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">COLLECTION</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">ONLINE SHOP</a></li>
+      </ul>
+
     </div>
 
-    <div class="mianv">
+    <div class="mainv">
       <img src="images/mainv.jpg" style="width: 100%;">
     </div>
 
@@ -75,6 +78,25 @@
       </div>
     </div>
 
+    <!-- スマホ用swiper -->
+    <div class="swiper-container">
+      <!-- ラッパーの（スライドを囲む） div 要素 -->
+      <div class="swiper-wrapper">
+        <!-- それぞれのスライドの div 要素 -->
+        <div class="swiper-slide"><img src="images/img_item01.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item02.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item03.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item04.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item05.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item06.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item07.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item08.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item09.jpg" alt=""></div>
+      </div>
+      <!-- ページネーションの div 要素 -->
+      <div class="swiper-pagination"></div>
+    </div>
+
 
     <a href="#" class="btn">
       <p>コレクション一覧</p>
@@ -93,6 +115,25 @@
           <a href="#"><img src="images/img_item01.jpg" style="width: 227px;"></a>
         </div>
       </div>
+    </div>
+
+    <!-- スマホ用swiper -->
+    <div class="swiper-container">
+      <!-- ラッパーの（スライドを囲む） div 要素 -->
+      <div class="swiper-wrapper">
+        <!-- それぞれのスライドの div 要素 -->
+        <div class="swiper-slide"><img src="images/img_item01.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item02.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item03.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item04.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item05.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item06.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item07.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item08.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img_item09.jpg" alt=""></div>
+      </div>
+      <!-- ページネーションの div 要素 -->
+      <div class="swiper-pagination"></div>
     </div>
 
     <a href="#" class="btn">
@@ -123,7 +164,7 @@
           <p>ダミーです。実店舗のご案内です。</p>
         </div>
 
-        <a href="#" class="btn2">
+        <a href="#" class="btn2" id="btn2">
           <p>詳しく見る</p>
         </a>
       </div>
@@ -136,7 +177,7 @@
         <div class="bottom-content__list--message">
           <p>ダミーです。最新情報お届けします。</p>
         </div>
-        <a href="#" class="btn2">
+        <a href="#" class="btn2" id="btn2">
           <p>詳しく見る</p>
         </a>
       </div>
@@ -145,31 +186,6 @@
         <div id="top-nav">
           <img src="images/page_top.jpg">
         </div>
-        <script>
-
-          //スクロール量を取得する関数
-          function getScrolled() {
-            return (window.pageYOffset !== undefined) ? window.pageYOffset : document.documentElement.scrollTop;
-          }
-
-          //トップに戻るボタンの要素を取得
-          var topButton = document.getElementById('top-nav');
-
-          //トップに移動する関数
-          function scrollToTop() {
-            var scrolled = getScrolled();
-            window.scrollTo(0, Math.floor(scrolled / 2));
-            if (scrolled > 0) {
-              window.setTimeout(scrollToTop, 30);
-            }
-          };
-
-          //イベント登録
-          topButton.onclick = function () {
-            scrollToTop();
-          };
-
-        </script>
 
         <div class="footer-icon">
           <div class="footer-icon__list">
@@ -201,8 +217,9 @@
         </div>
       </footer>
     </div>
-
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+  <script type="text/javascript" src="function.js"></script>
 </body>
 
 </html>

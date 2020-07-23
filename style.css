@@ -434,6 +434,7 @@ footer{
     display: none;
   }
 
+  /* swiper */
   .swiper-container{
     margin-top: 64px;
   }
@@ -446,10 +447,15 @@ footer{
     margin-bottom: 40px;
   }
 
+  /* ボタン */
   .btn{
     padding: 35px 0;
     margin: 0 auto 176px;
     width: 70%;
+  }
+
+  .btn p{
+    font-size: 22px;
   }
 
   .btn2{
@@ -458,6 +464,16 @@ footer{
     margin: 0 auto 176px;
   }
 
+  .btn2 p{
+    font-size: 22px;
+  }
+
+  #btn2{
+    width: 313px;
+    padding: 30px;
+    margin: 16px 0 244px 0;
+  }
+  /* アバウトアス */
   .aboutus img{
     width: 658px !important;
   }
@@ -465,6 +481,8 @@ footer{
   .aboutus__title{
     margin: 64px 0;
   }
+
+  /* フッター */
 
   .bottom-content__list{
     width: 313px;
@@ -478,14 +496,9 @@ footer{
     margin: 32px 0;
   }
 
-  #btn2{
-    width: 313px;
-    padding: 30px;
-    margin: 16px 0 244px 0;
-  }
-
   .footer-icon{
     margin: 70px 0 80px;
+    padding-left: 80px;
   }
 
   .footer-icon__list{

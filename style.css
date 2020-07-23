@@ -13,6 +13,10 @@
   .swiper-container{
     display: none;
   }
+
+  #hamburger-menu{
+    display: none;
+  }
 }
 
 /* ボタン */
@@ -345,6 +349,10 @@ footer{
     display: none;
   }
 
+  #hamburger-menu{
+    display: none;
+  }
+
   .nav-bar__list{
     padding-left: 60px;
   }
@@ -419,6 +427,10 @@ footer{
   }
 
   .main-colection__footer{
+    display: none;
+  }
+
+  .nav-bar{
     display: none;
   }
 
@@ -497,5 +509,81 @@ footer{
   .copylight{
     margin-bottom: 60px;
     font-size: 20px;
+  }
+  
+  /* ハンバーガーメニュー */
+  #hamburger-menu #navi {
+    transition: all .6s;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    top: 0;
+    background-color: #fff;
+    position: fixed;
+    left: -820px;
+  }
+   
+  #hamburger-menu .nav_btn {
+    width: 50px;
+    z-index: 300;
+    top: 7px;
+    margin: 50px;
+    cursor: pointer;
+    position: absolute;
+  }
+   
+  .hamburger_line {
+    transition: all .6s;
+    width: 34px;
+    height: 2px;
+    left: 5px;
+    background-color: #000;
+    position: absolute;
+  }
+   
+  .hamburger_line1 { top: 10px; }
+  .hamburger_line2 { top: 21px; }
+  .hamburger_line3 { top: 32px; }
+    
+  /* 表示された時用のCSS */
+  .nav_open #hamburger-menu #navi { left: 0; }
+   
+  .nav_open .hamburger_line1 {
+    transform: rotate(45deg);
+    top: 20px;
+    background-color: #fff;
+    position: fixed;
+    margin: 50px;
+  }
+   
+  .nav_open .hamburger_line2 {
+    width: 0;
+    left: 50%;
+  }
+   
+  .nav_open .hamburger_line3 {
+    transform: rotate(-45deg);
+    top: 20px;
+    background-color: #fff;
+    position: fixed;
+    margin: 50px;
+  }
+  
+  #hamburger-menu #navi li a {
+    font-weight: 500;
+    color: #000;
+    display: block;
+  }
+  
+  #hamburger-menu #navi li {
+    font-family: "Times New Roman";
+    padding: 20px;
+    font-size: 40px;
+  }
+  
+  .black-bar{
+    background-color: #000;
+    height: 150px;
   }
 }

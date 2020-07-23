@@ -11,6 +11,15 @@
 </head>
 
 <body>
+  <!--ローディング画面-->
+  <div id="loader-bg" class="is-hide">
+    <div id="loader" class="is-hide">
+      <p>
+        <img src="images/logo.png"><br>
+      </p>
+    </div>
+  </div>
+
   <div class="container">
     <!-- ヘッダー -->
     <header>
@@ -61,12 +70,13 @@
     </div>
 
     <!-- メインビジュアル -->
-    <div class="swiper-container test">
+    <div class="swiper-container mainv-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="images/mainv.jpg" style="width: 100%;"></div>
         <div class="swiper-slide"><img src="images/mainv2.jpg" style="width: 100%;"></div>
         <div class="swiper-slide"><img src="images/mainv3.jpg" style="width: 100%;"></div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <div class="main-message">

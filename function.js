@@ -20,6 +20,7 @@ topButton.onclick = function () {
   scrollToTop();
 };
 
+//swiper
 let mySwiper = new Swiper('.swiper-container', {
   // 以下にオプションを設定
   loop: true, //最後に達したら先頭に戻る
@@ -31,6 +32,25 @@ let mySwiper = new Swiper('.swiper-container', {
     clickable: true, //クリックに反応させる
   }
 })
+
+var mySwiper1 = new Swiper('.test', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    reverseDirection: false
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  }
+});
 
 //ハンバーガーメニュー 
 function toggleNav() {

@@ -4,7 +4,7 @@
   background-color: #ffffff;
 }
 @media (min-width: 1021px){
-  .swiper-container{
+  .swiper-container:not(.test){
     display: none;
   }
 
@@ -403,7 +403,8 @@ footer{
   .main-message__sentense{
     width: 658px;
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 25px;
+    line-height: 45px;
   }
 
   .title{
@@ -476,6 +477,9 @@ footer{
     margin: 64px 0;
   }
 
+  .aboutus__message{
+    font-size: 22px;
+  }
   /* フッター */
 
   .bottom-content__list{
@@ -488,6 +492,10 @@ footer{
 
   .bottom-content__list--title{
     margin: 32px 0;
+  }
+
+  .bottom-content__list--message{
+    font-size: 22px;
   }
 
   .footer-icon{
@@ -507,6 +515,10 @@ footer{
   .company__content{
     display: block;
     margin:  0 auto 30px;
+  }
+
+  .company__content a{
+    font-size: 22px;
   }
 
   .company-guide{

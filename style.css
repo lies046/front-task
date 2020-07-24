@@ -588,7 +588,7 @@ footer{
     height: 100%;
     z-index: 200;
     top: 0;
-    background-color: #fff;
+    background-color: #ffffff;
     position: fixed;
     left: -820px;
   }
@@ -647,7 +647,7 @@ footer{
   
   #hamburger-menu #navi li {
     font-family: "Times New Roman";
-    padding: 20px;
+    padding: 40px;
     font-size: 40px;
   }
   

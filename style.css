@@ -13,6 +13,9 @@
   }
 }
 
+.main-container{
+  width: 100%;
+}
 
 /* ロード */
 .is-hide {
@@ -184,9 +187,9 @@ header{
 .main-colection{
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 400px 227px;
-  margin-left: 270px;
+  grid-template-columns: 458px 227px 227px;
   margin-top: 32px;
+  justify-content: center;
 }
 
 .main-collection__item1{
@@ -231,6 +234,7 @@ header{
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(4, 200px);
+  justify-content: center;
 }
 
 /* アバウトアス */
